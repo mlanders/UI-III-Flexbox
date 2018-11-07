@@ -64,7 +64,6 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
-
 * {
     box-sizing: border-box;
 }
@@ -139,7 +138,7 @@ address p{
 .logo{
 	width: 150px;
 	height: 40px;
-	margin: 5px 5px 0 0;
+	margin: 5px 15px 0 0;
 	background-image: url("../img/logo.png");
 	background-repeat: no-repeat;
 	background-size: 150px 40px;
@@ -169,7 +168,11 @@ h3{
 .hero-title{
 	text-align: center;
 }
-
+.services{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
 
 .left{
 	padding-top: 90px;
@@ -271,4 +274,17 @@ li{
 a.learnMore:hover{
 	background-color: maroon;
 	color: white;
+}
+
+/* Media Query */
+@media only screen and (max-width: 900px){
+	.bigBox{
+		flex-direction: column;
+	}
+	.smallBox{
+		width: 900px;
+	}
+	.services-info-img{
+		width: 900px;
+	}
 }
